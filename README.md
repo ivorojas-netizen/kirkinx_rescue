@@ -1,6 +1,17 @@
 # KirkinX | Autonomous Rescue Swarm C2
 
-A distributed Command and Control (C2) and swarm robotics platform designed for humanitarian search and rescue (SAR) operations in disaster environments. The system combines centralized tactical reasoning powered by Meta AI models (Meta Muse Wonder / Llama 3) with real-time edge computer vision (YOLOv8) optimized for resource-constrained field hardware.
+A distributed Command and Control (C2) and swarm robotics platform designed for humanitarian search and rescue (SAR) operations in disaster environments. The system combines centralized tactical reasoning powered by Meta AI models (Meta Llama 3 via partner endpoints / Muse environment) with real-time edge computer vision (YOLOv8) optimized for resource-constrained field hardware.
+
+---
+
+## ⚖️ Hackathon Compliance & Model Disclosure
+
+In strict accordance with hackathon rules regarding model usage, runtime calls, and demo assets:
+
+* **Runtime AI Model (Tactical Reasoning & C2):** Central decision-making, telemetry evaluation, and automated JSON dispatch directives are exclusively driven by **Meta Llama 3** (open-weights execution / partner API inference). No third-party, non-Meta generative AI models are called at runtime.
+* **Computer Vision Pipeline:** Real-time object and casualty detection is handled locally on edge hardware via **YOLOv8** (classical lightweight edge vision, running fully on-device).
+* **Development & Tooling:** Project workflow, assistance, and deployment environments utilized **Muse Code** and official hackathon partner infrastructure.
+* **Audio & Demo Disclosure:** All demo video narration and voiceover elements were produced natively via human developer voice and standard operating system text-to-speech accessibility features. No external generative AI speech APIs (such as ElevenLabs) were used at runtime or in video production.
 
 ---
 
